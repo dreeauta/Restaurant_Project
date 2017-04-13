@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <style>
+
+    h3 {
+      text-align: center;
+      border: 5px solid darkgray;
+      background-color: black;
+      color: white;
+      padding: 5px;
+    }
+
+    .reviews {
+      text-align: center;
+      /*border: 5px solid blue;
+      background-color: darkblue;
+      color: white;
+      height: 30vh;*/
+      padding: 20px;
+    }
+
+    body {
+      background-color: white;
+      border: 2px solid darkgray;
+      /*text-align: center;*/
+    }
+
+    .search {
+      padding-top: 200px;
+      padding-bottom: 20px;
+      background-color: gray;
+      color: white;
+    }
+
+    button{
+      border: 2px solid white;
+    }
+    /*form label, form input, form option{
+      position: relative;
+      left: 37vw;
+      font-size: 1.2em;
+    }*/
+
+
+/*
+    form input {
+      font-size: 2em;
+      position: relative;
+      left: 33vw;
+    }*/
+
+    #add_review {
+      color: white;
+      background-color: black;
+      padding: 20px;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    {{#if session.loggedinUser}}
+    Welcome {{session.loggedInUser}}!
+
+    {{/if}}
+    {{{ body }}}
+  </body>
+</html>
